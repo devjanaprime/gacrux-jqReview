@@ -39,3 +39,4 @@ Afternoon lecture:
 ![this data](images/thisData.png)
 - splice out a given car from the garage array
 ![this data](images/splice.png)
+- use .va setters to populate input fields with car taken out for a ride
