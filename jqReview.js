@@ -25,7 +25,11 @@ $( document ).ready( function(){
   $( '#garageOut' ).on( 'click', '.takeOutButton',function(){
     console.log( 'in takeOutButton on click', $( this ).data( 'id' ) );
     var carId = $( this ).data( 'id' );
-    console.log( garage.splice( carId, 1 ) );
+    var takenCar = garage.splice( carId, 1 );
+    console.log( takenCar[ 0 ] );
+    $( '#yearIn' ).val( takenCar[ 0 ].year );
+    $( '#makeIn' ).val( takenCar[ 0 ].make );
+    $( '#modelIn' ).val( takenCar[ 0 ].model );
     displayGarage();
   }); // end takeOutButton on click
 }); //end doc ready
